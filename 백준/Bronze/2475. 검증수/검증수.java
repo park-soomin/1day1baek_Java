@@ -8,13 +8,14 @@ class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
 
-        int a = Integer.parseInt(st.nextToken());
-        int b = Integer.parseInt(st.nextToken());
-        int c = Integer.parseInt(st.nextToken());
-        int d = Integer.parseInt(st.nextToken());
-        int e = Integer.parseInt(st.nextToken());
+        int[] a = new int[5];
+        int sum = 0;
 
-        int result = (a*a+b*b+c*c+d*d+e*e) % 10;
-        System.out.println(result);
+        for(int i=0; i<5; i++) {
+            a[i] = Integer.parseInt(st.nextToken());
+            sum += a[i] * a[i];
+        }
+
+        System.out.println(sum % 10);
     }
 }
