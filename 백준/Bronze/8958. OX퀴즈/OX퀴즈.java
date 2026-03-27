@@ -15,7 +15,7 @@ class Main {
 
             for (int j=0; j<str.length(); j++) {
                 if (str.charAt(j) == 'O') {
-                    success += 1;
+                    success ++;
                     sum += success;
                 } else {
                     success = 0;
