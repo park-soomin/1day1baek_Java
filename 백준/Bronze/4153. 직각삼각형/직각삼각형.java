@@ -8,7 +8,7 @@ class Main {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         StringBuilder stringBuilder = new StringBuilder();
 
-        int a, b, c;
+        int a, b, c; // 세 변의 길이
 
         while(true) {
             StringTokenizer stringTokenizer = new StringTokenizer(bufferedReader.readLine());
@@ -17,10 +17,10 @@ class Main {
             c = Integer.parseInt(stringTokenizer.nextToken());
 
             if (a==0 && b==0 && c==0) {
-                break;
+                break; // 0 0 0이 입력되면 종료
             }
 
-            if (a*a==b*b+c*c || b*b==a*a+c*c || c*c==a*a+b*b) {
+            if (a*a==b*b+c*c || b*b==a*a+c*c || c*c==a*a+b*b) { // 피타고라스 조건 만족
                 stringBuilder.append("right").append("\n");
             } else {
                 stringBuilder.append("wrong").append("\n");
