@@ -6,7 +6,7 @@ class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
-        Long N = Long.parseLong(bufferedReader.readLine());
+        int N = Integer.parseInt(bufferedReader.readLine());
 
         int range = 1;
         int count = 1;
